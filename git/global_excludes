@@ -1,0 +1,16 @@
+*.swp
+.DS_Store
+.checkstyle
+.classpath
+.directory
+.externalToolBuilders
+.includepath
+*maven-ant-tasks-*.jar
+.project
+.settings
+.springBeans
+cobertura.ser
+maven-eclipse.xml
+target
+build
+.redcar

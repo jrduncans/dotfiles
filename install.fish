@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-set DOTFILES $HOME/dotfiles
+set DOTFILES ~/dotfiles
 
 source $DOTFILES/fish/functions/colored.fish
 
@@ -15,3 +15,5 @@ end
 
 make_link $DOTFILES/fish/config.fish ~/.config/fish/config.fish
 make_link $DOTFILES/fish/functions ~/.config/fish/functions
+make_link $DOTFILES/git/gitconfig ~/.gitconfig
+make_link $DOTFILES/vim/vimrc ~/.vimrc

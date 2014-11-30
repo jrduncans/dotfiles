@@ -1,0 +1,3 @@
+set TIMESHEET $HOME/Dropbox/akqa/timesheet
+balias t "$HOME/apps/timetracker/timetracker.rb $TIMESHEET"
+balias timesheet "vi +/`date +%Y-%m-%d` $TIMESHEET"

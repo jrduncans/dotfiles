@@ -1,0 +1,32 @@
+[core]
+	excludesfile = ~/dotfiles/git/global_excludes
+
+[user]
+	name = Stephen Duncan Jr
+	email = stephen.duncan@gmail.com
+
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+
+[alias]
+	ba = branch -a
+	br = branch
+	ci = commit
+	co = checkout
+	rb = rebase
+	st = status
+[difftool "sourcetree"]
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[diff]
+	tool = diffmerge
+[difftool "diffmerge"]
+	cmd = diffmerge $LOCAL $REMOTE
+[push]
+	default = simple
