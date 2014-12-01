@@ -1,5 +1,16 @@
 *.swp
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+.vlt
+.project
 .checkstyle
 .classpath
 .directory
@@ -14,3 +25,7 @@ maven-eclipse.xml
 target
 build
 .redcar
+*.iml
+.idea
+MYTODO
+stephen.properties

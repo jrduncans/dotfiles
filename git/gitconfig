@@ -18,15 +18,17 @@
 	co = checkout
 	rb = rebase
 	st = status
-[difftool "sourcetree"]
-	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    p = pull --rebase --prune
+[merge]
+	tool = diffmerge
+[mergetool "diffmerge"]
+	cmd = "diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
 	trustExitCode = true
 [diff]
 	tool = diffmerge
 [difftool "diffmerge"]
-	cmd = diffmerge $LOCAL $REMOTE
+	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
 [push]
 	default = simple
+[credential]
+	helper = osxkeychain

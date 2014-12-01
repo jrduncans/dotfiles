@@ -1,8 +1,10 @@
 filetype off
-call pathogen#runtime_append_all_bundles() 
+"call pathogen#runtime_append_all_bundles() 
 filetype plugin indent on
 
 syntax enable			" enable syntax highlighting
+
+source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 
 "let g:GPGUseAgent=0		" disable external passphrase entry
 "let g:GPGPreferSymmetric=1	" enable gpg file handling
