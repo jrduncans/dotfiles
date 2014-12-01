@@ -1,5 +1,7 @@
+set DOTFILES ~/dotfiles
+
 # Path to your oh-my-fish.
-set fish_path $HOME/.oh-my-fish
+set fish_path ~/.oh-my-fish
 
 # Theme
 set fish_theme bobthefish
@@ -10,7 +12,7 @@ set fish_theme bobthefish
 set fish_plugins better-alias brew extract local-config peco sublime
 
 # Path to your custom folder (default path is $FISH/custom)
-set fish_custom $HOME/dotfiles/fish/oh-my-fish
+set fish_custom $DOTFILES/fish/oh-my-fish
 
 # Load oh-my-fish configuration.
-. $fish_path/oh-my-fish.fish
+source $fish_path/oh-my-fish.fish

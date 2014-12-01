@@ -15,5 +15,6 @@ end
 
 make_link $DOTFILES/fish/config.fish ~/.config/fish/config.fish
 make_link $DOTFILES/fish/functions ~/.config/fish/functions
+make_link $DOTFILES/fish/completions ~/.config/fish/completions
 make_link $DOTFILES/git/gitconfig ~/.gitconfig
 make_link $DOTFILES/vim/vimrc ~/.vimrc
