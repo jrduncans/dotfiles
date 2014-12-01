@@ -1,3 +1,7 @@
-set TIMESHEET $HOME/Dropbox/akqa/timesheet
-balias t "$HOME/apps/timetracker/timetracker.rb $TIMESHEET"
+set TIMESHEET ~/Dropbox/akqa/timesheet
+
+balias t "~/apps/timetracker/timetracker.rb $TIMESHEET"
+balias t-nwm "~/apps/timetracker/timetracker.rb ~/Dropbox/akqa/timesheet-nwm"
+balias t-int "~/apps/timetracker/timetracker.rb ~/Dropbox/akqa/timesheet-internal"
+
 balias timesheet "vi +/`date +%Y-%m-%d` $TIMESHEET"
