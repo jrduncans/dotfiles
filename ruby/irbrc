@@ -1,0 +1,5 @@
+begin
+  require 'irbtools/more'
+rescue LoadError => err
+  warn "couldn't load irbtools: #{err}"
+end

@@ -18,3 +18,4 @@ make_link $DOTFILES/fish/functions ~/.config/fish/functions
 make_link $DOTFILES/fish/completions ~/.config/fish/completions
 make_link $DOTFILES/git/gitconfig ~/.gitconfig
 make_link $DOTFILES/vim/vimrc ~/.vimrc
+make_link $DOTFILES/ruby/irbrc ~/.irbrc
