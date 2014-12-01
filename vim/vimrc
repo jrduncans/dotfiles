@@ -1,21 +1,13 @@
 filetype off
-"call pathogen#runtime_append_all_bundles() 
-filetype plugin indent on
 
 syntax enable			" enable syntax highlighting
 
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 
-"let g:GPGUseAgent=0		" disable external passphrase entry
-"let g:GPGPreferSymmetric=1	" enable gpg file handling
-
 set nocompatible		" ensure we are using latest functionality
-set foldmethod=indent		" parse file for folds
-set foldlevel=99		" start with all folds open
 set hlsearch			" enable search highlighting
 set incsearch			" enable search as you type
 set number			" display line numbers
-set mouse=a			" enable mouse support
 
 " indentation rules
 setlocal tabstop=4 shiftwidth=4
@@ -23,59 +15,9 @@ autocmd FileType ruby setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2
 autocmd FileType python setlocal expandtab tabstop=4 softtabstop=4 shiftwidth=4
 autocmd FileType php setlocal expandtab tabstop=4 softtabstop=4 shiftwidth=4
 
-" code commenting leaders for different file types
-au FileType c,cpp,java,php let b:comment_leader = '// '
-au FileType expect,perl,python,ruby,sh let b:comment_leader = '# '
-au FileType vim let b:comment_leader = '" '
-
-" code commenting shortcuts
-noremap <silent> ,c :<c-b>sil <c-e>s/^/<c-r>=escape(b:comment_leader,'\/')<cr>/<cr>:noh<cr>
-noremap <silent> ,u :<c-b>sil <c-e>s/^\V<c-r>=escape(b:comment_leader,'\/')<cr>//e<cr>:noh<cr>
-
-" insert datestamp
-imap ,d <c-r>=strftime("%Y%m%d")<cr> 
-
-" search and replace shortcut
-map ,r *:%s///g<left><left>
-
 set modelines=0
 set visualbell
 set scrolloff=3
 set hidden
-set wildmenu
-set wildmode=list:longest
 set laststatus=2
 set showmatch
-
-nnoremap / /\v
-vnoremap / /\v
-
-nnoremap <leader><space> :noh<cr>
-
-map <c-p> :NERDTreeToggle ~/workspace<cr>
-
-set wrap	" enable word wrapping
-set linebreak	" ensure lines are not wrapped within a word
-
-set gfn=DejaVu\ Sans\ Mono\ 9
-
-" enable saving using ctrl-s
-map <c-s> <esc>:w<cr>
-imap <c-s> <esc>:w<cr>a
-
-" emulate eclipse <c-space> for word completion
-imap <c-space> <c-n>
-
-highlight ExtraWhitespace ctermbg=lightgray guibg=lightgray
-
-au InsertEnter * match ExtraWhiteSpace /\s\+\%#\@<!$/
-au InsertLeave * match ExtraWhiteSpace /\s\+$/
-
-" disable wrapping and spell checking for certain file types
-au FileType c,cpp,java,perl,php,ruby,sh,vim,cfm,cfc,groovy,js,html,css setlocal nowrap nolinebreak nospell
-
-" gvim specific configuration
-if has('gui_running')
-	set lines=50
-	set columns=110
-endif
