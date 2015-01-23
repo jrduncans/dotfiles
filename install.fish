@@ -55,4 +55,4 @@ clone_git_repo git@github.com:jrduncans/timetracker.git ~/apps/timetracker
 
 make_link ~/workspace/third-party/solarized/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/solarized.vim
 
-vim +PluginInstall +qall
+vi +PluginInstall +qall
