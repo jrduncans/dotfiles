@@ -1,19 +1,33 @@
-syntax enable			" enable syntax highlighting
+if &shell =~# 'fish$'
+    set shell=sh
+endif
+
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'dag/vim-fish'
+
+call vundle#end()
+filetype plugin indent on
+
+syntax enable
 set background=light
 colorscheme solarized
 
-source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+set hlsearch
+set incsearch
+set number
 
-set nocompatible		" ensure we are using latest functionality
-set hlsearch			" enable search highlighting
-set incsearch			" enable search as you type
-set number			" display line numbers
-
-" indentation rules
 setlocal tabstop=4 shiftwidth=4
 autocmd FileType ruby setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2
 autocmd FileType python setlocal expandtab tabstop=4 softtabstop=4 shiftwidth=4
 autocmd FileType php setlocal expandtab tabstop=4 softtabstop=4 shiftwidth=4
+autocmd FileType fish setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2
 
 set modelines=0
 set visualbell
