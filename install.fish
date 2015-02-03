@@ -45,13 +45,13 @@ make_link $DOTFILES/git/gitconfig ~/.gitconfig
 make_link $DOTFILES/vim/vimrc ~/.vimrc
 make_link $DOTFILES/ruby/irbrc ~/.irbrc
 
-clone_git_repo git@github.com:gmarik/Vundle.vim.git $THIRDPARTY/Vundle.vim
+clone_git_repo https://github.com/gmarik/Vundle.vim.git $THIRDPARTY/Vundle.vim
 make_link $THIRDPARTY/Vundle.vim ~/.vim/bundle/Vundle.vim
 
-clone_git_repo git://github.com/altercation/solarized.git $THIRDPARTY/solarized
-clone_git_repo git@github.com:jkaving/intellij-colors-solarized.git $THIRDPARTY/intellij-colors-solarized
+clone_git_repo https://github.com/altercation/solarized.git $THIRDPARTY/solarized
+clone_git_repo https://github.com/jkaving/intellij-colors-solarized.git $THIRDPARTY/intellij-colors-solarized
 
-clone_git_repo git@github.com:jrduncans/timetracker.git ~/apps/timetracker
+clone_git_repo https://github.com/jrduncans/timetracker.git ~/apps/timetracker
 
 make_link ~/workspace/third-party/solarized/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/solarized.vim
 
