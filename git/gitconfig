@@ -19,22 +19,32 @@
 	rb = rebase
 	st = status
     p = pull --rebase --prune
-[merge]
-	tool = diffmerge
-[mergetool "diffmerge"]
-	cmd = "diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
-	trustExitCode = true
-[diff]
-	tool = diffmerge
-[difftool "diffmerge"]
-	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
+
 [push]
 	default = simple
+
 [credential]
 	helper = osxkeychain
-[difftool "sourcetree"]
-	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+
+[diff]
+	tool = p4mergetool
+
+[difftool "p4mergetool"]
+	cmd = $P4MERGE $LOCAL $REMOTE
+
+[difftool "diffmerge"]
+	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
+
+[merge]
+	tool = p4mergetool
+
+[mergetool "p4mergetool"]
+	cmd = $P4MERGE $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
+	trustExitCode = false
+
+[mergetool "diffmerge"]
+	cmd = "diffmerge --nosplash -d --merge 2>/dev/null --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
 	trustExitCode = true
+	
+[mergetool]
+	keepBackup = false
