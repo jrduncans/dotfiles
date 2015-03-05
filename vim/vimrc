@@ -36,3 +36,4 @@ set scrolloff=3
 set hidden
 set laststatus=2
 set showmatch
+set backspace=indent,eol,start
