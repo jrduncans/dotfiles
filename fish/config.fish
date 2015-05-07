@@ -17,3 +17,5 @@ set fish_custom $DOTFILES/fish/oh-my-fish
 
 # Load oh-my-fish configuration.
 source $fish_path/oh-my-fish.fish
+
+eval (python -m virtualfish auto_activation)

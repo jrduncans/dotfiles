@@ -44,6 +44,8 @@ make_link $DOTFILES/fish/completions ~/.config/fish/completions
 make_link $DOTFILES/git/gitconfig ~/.gitconfig
 make_link $DOTFILES/vim/vimrc ~/.vimrc
 make_link $DOTFILES/ruby/irbrc ~/.irbrc
+make_link $DOTFILES/sbt/global.sbt ~/.sbt/0.13/global.sbt
+make_link $DOTFILES/sbt/plugins/plugins.sbt ~/.sbt/0.13/plugins/plugins.sbt
 
 clone_git_repo https://github.com/gmarik/Vundle.vim.git $THIRDPARTY/Vundle.vim
 make_link $THIRDPARTY/Vundle.vim ~/.vim/bundle/Vundle.vim
