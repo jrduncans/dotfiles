@@ -47,6 +47,9 @@ make_link $DOTFILES/ruby/irbrc ~/.irbrc
 make_link $DOTFILES/sbt/global.sbt ~/.sbt/0.13/global.sbt
 make_link $DOTFILES/sbt/plugins/plugins.sbt ~/.sbt/0.13/plugins/plugins.sbt
 
+clone_git_repo https://github.com/oh-my-fish/oh-my-fish.git ~/.oh-my-fish
+omf install
+
 clone_git_repo https://github.com/gmarik/Vundle.vim.git $THIRDPARTY/Vundle.vim
 make_link $THIRDPARTY/Vundle.vim ~/.vim/bundle/Vundle.vim
 
@@ -55,6 +58,14 @@ clone_git_repo https://github.com/jkaving/intellij-colors-solarized.git $THIRDPA
 
 clone_git_repo https://github.com/jrduncans/timetracker.git ~/apps/timetracker
 
+clone_git_repo https://github.com/powerline/fonts.git $THIRDPARTY/powerline-fonts
+eval $THIRDPARTY/powerline-fonts/install.sh
+
 make_link ~/workspace/third-party/solarized/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/solarized.vim
 
 vi +PluginInstall +qall
+
+pip install virtualfish
+
+grep "/usr/local/bin/fish" /etc/shells > /dev/null; or echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
+echo "To set fish as default shell, run:  chsh -s /usr/local/bin/fish"
