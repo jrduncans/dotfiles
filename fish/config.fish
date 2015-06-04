@@ -12,6 +12,9 @@ Plugin "extract"
 Plugin "local-config"
 Plugin "peco"
 Plugin "sublime"
+Plugin "jrduncans"
+Plugin "java"
+Plugin "timesheet"
 Plugin "keys"
 
 eval (python -m virtualfish auto_activation)

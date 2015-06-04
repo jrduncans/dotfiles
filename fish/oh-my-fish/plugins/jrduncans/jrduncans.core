@@ -1,3 +1,5 @@
+balias mkdir 'mkdir -p'
+
 if status --is-login
   set PATH $PATH ~/bin
 end
