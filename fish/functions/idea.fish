@@ -2,15 +2,16 @@ function idea
   set project $argv[1]
 
   set ideas \
-    Intellij\ IDEA\ 14.app \
-    IntelliJ\ IDEA\ 14\ CE.app
+    /Applications/Intellij\ IDEA\ 14.app \
+    /Applications/IntelliJ\ IDEA\ 14\ CE.app \
+    /opt/homebrew-cask/Caskroom/intellij-idea-ce/14.1.3/IntelliJ\ IDEA\ 14\ CE.app
 
   set foundIdea 0
   for idea in $ideas
-    if test -e /Applications/$idea
+    if test -e $idea
       echo "opening with $idea"
       set foundIdea 1
-      open $project -a /Applications/$idea
+      open $project -a $idea
       break;
     end
   end
