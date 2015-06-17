@@ -1,1 +1,3 @@
 set -x -g AWS_DEFAULT_PROFILE plus-test-readonly
+set -x -g SQUID_TOOLKIT_USE_SHELL_USER true
+set -x -g SQUID_TOOLKIT_DISABLE_SAVE_CREDENTIALS true
