@@ -16,6 +16,5 @@ Plugin "jrduncans"
 Plugin "java"
 Plugin "timesheet"
 Plugin "keys"
-Plugin "aws"
 
 eval (python -m virtualfish auto_activation)
