@@ -4,6 +4,7 @@ function idea
   set ideas \
     /Applications/Intellij\ IDEA\ 14.app \
     /Applications/IntelliJ\ IDEA\ 14\ CE.app \
+    /Applications/IntelliJ\ IDEA\ 15\ CE.app \
     /opt/homebrew-cask/Caskroom/intellij-idea-ce/14.1.3/IntelliJ\ IDEA\ 14\ CE.app
 
   set foundIdea 0
