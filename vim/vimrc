@@ -17,7 +17,7 @@ call vundle#end()
 filetype plugin indent on
 
 syntax enable
-set background=light
+set background=dark
 colorscheme solarized
 
 set hlsearch
