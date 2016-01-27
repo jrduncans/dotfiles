@@ -1,0 +1,19 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Ensime",
+		"HOCON Syntax Highlighting",
+		"Indent XML",
+		"Package Control",
+		"Pretty JSON",
+		"Solarized Color Scheme",
+		"SublimeREPL",
+		"SublimeSBT",
+		"Theme - Soda SolarizedDark"
+	]
+}
