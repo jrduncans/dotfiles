@@ -2,6 +2,7 @@
 
 set DOTFILES ~/dotfiles
 set THIRDPARTY ~/workspace/third-party
+set SUBLIME_PREFS ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
 source $DOTFILES/fish/functions/colored.fish
 
@@ -46,6 +47,9 @@ make_link $DOTFILES/vim/vimrc ~/.vimrc
 make_link $DOTFILES/ruby/irbrc ~/.irbrc
 make_link $DOTFILES/sbt/global.sbt ~/.sbt/0.13/global.sbt
 make_link $DOTFILES/sbt/plugins/plugins.sbt ~/.sbt/0.13/plugins/plugins.sbt
+make_link $DOTFILES/sublime/Preferences.sublime-settings $SUBLIME_PREFS/Preferences.sublime-settings
+make_link $DOTFILES/sublime/Scala.sublime-settings $SUBLIME_PREFS/Scala.sublime-settings
+make_link $DOTFILES/sublime/Ensime.sublime-settings $SUBLIME_PREFS/Ensime.sublime-settings
 
 clone_git_repo https://github.com/oh-my-fish/oh-my-fish.git ~/.oh-my-fish
 omf install
