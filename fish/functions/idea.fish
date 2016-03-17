@@ -2,6 +2,7 @@ function idea
   set project $argv[1]
 
   set ideas \
+    /Applications/IntelliJ\ IDEA\ CE.app \
     /Applications/Intellij\ IDEA\ 14.app \
     /Applications/IntelliJ\ IDEA\ 14\ CE.app \
     /Applications/IntelliJ\ IDEA\ 15\ CE.app \
