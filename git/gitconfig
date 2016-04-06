@@ -2,7 +2,7 @@
 	excludesfile = ~/dotfiles/git/global_excludes
 
 [user]
-	name = Stephen Duncan Jr
+	name = Stephen Duncan
 	email = stephen.duncan@gmail.com
 
 [color]
@@ -54,3 +54,5 @@
 [mergetool "sourcetree"]
 	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.5.2/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[rebase]
+	autosquash = true
