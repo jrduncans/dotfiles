@@ -49,6 +49,7 @@ make_link $DOTFILES/sbt/global.sbt ~/.sbt/0.13/global.sbt
 make_link $DOTFILES/sbt/plugins/plugins.sbt ~/.sbt/0.13/plugins/plugins.sbt
 make_link $DOTFILES/sublime/Preferences.sublime-settings $SUBLIME_PREFS/Preferences.sublime-settings
 make_link $DOTFILES/sublime/Scala.sublime-settings $SUBLIME_PREFS/Scala.sublime-settings
+make_link $DOTFILES/sublime/Ruby.sublime-settings $SUBLIME_PREFS/Ruby.sublime-settings
 make_link $DOTFILES/sublime/Ensime.sublime-settings $SUBLIME_PREFS/Ensime.sublime-settings
 make_link $DOTFILES/sublime/Package\ Control.sublime-settings $SUBLIME_PREFS/Package\ Control.sublime-settings
 
