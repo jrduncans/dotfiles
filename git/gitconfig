@@ -18,7 +18,10 @@
 	co = checkout
 	rb = rebase
 	st = status
-    p = pull --rebase --prune
+	p = pull --rebase --prune
+	append = commit --amend --no-edit
+	lola = log --graph --oneline --decorate --all
+	unstage = reset HEAD --
 
 [push]
 	default = simple
