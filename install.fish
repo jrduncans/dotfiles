@@ -71,6 +71,7 @@ make_link ~/workspace/third-party/solarized/vim-colors-solarized/colors/solarize
 
 vi +PluginInstall +qall
 
+sudo pip install virtualenv
 pip install --user virtualfish
 
 grep "/usr/local/bin/fish" /etc/shells > /dev/null; or echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
