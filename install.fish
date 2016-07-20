@@ -71,7 +71,7 @@ make_link ~/workspace/third-party/solarized/vim-colors-solarized/colors/solarize
 
 vi +PluginInstall +qall
 
-pip install virtualfish
+pip install --user virtualfish
 
 grep "/usr/local/bin/fish" /etc/shells > /dev/null; or echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
 echo "To set fish as default shell, run:  chsh -s /usr/local/bin/fish"
