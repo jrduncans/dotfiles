@@ -17,7 +17,7 @@
 	ci = commit
 	co = checkout
 	rb = rebase
-	st = status
+	st = status --short --branch
 	p = pull --rebase --prune
 	append = commit --amend --no-edit
 	lola = log --graph --oneline --decorate --all
