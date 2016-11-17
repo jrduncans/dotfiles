@@ -3,6 +3,7 @@
 set DOTFILES ~/dotfiles
 set THIRDPARTY ~/workspace/third-party
 set SUBLIME_PREFS ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+set CWD (pwd)
 
 source $DOTFILES/fish/functions/colored.fish
 
@@ -42,6 +43,7 @@ end
 make_link $DOTFILES/fish/config.fish ~/.config/fish/config.fish
 make_link $DOTFILES/fish/functions ~/.config/fish/functions
 make_link $DOTFILES/fish/completions ~/.config/fish/completions
+make_link $DOTFILES/fish/oh-my-fish ~/.config/omf
 make_link $DOTFILES/git/gitconfig ~/.gitconfig
 make_link $DOTFILES/vim/vimrc ~/.vimrc
 make_link $DOTFILES/ruby/irbrc ~/.irbrc
@@ -53,8 +55,13 @@ make_link $DOTFILES/sublime/Ruby.sublime-settings $SUBLIME_PREFS/Ruby.sublime-se
 make_link $DOTFILES/sublime/Ensime.sublime-settings $SUBLIME_PREFS/Ensime.sublime-settings
 make_link $DOTFILES/sublime/Package\ Control.sublime-settings $SUBLIME_PREFS/Package\ Control.sublime-settings
 
-clone_git_repo https://github.com/oh-my-fish/oh-my-fish.git ~/.oh-my-fish
-omf install
+mkdir -p ~/bin
+mkdir -p ~/.local/bin
+
+clone_git_repo https://github.com/oh-my-fish/oh-my-fish.git $THIRDPARTY/oh-my-fish
+cd $THIRDPARTY/oh-my-fish
+eval ./bin/install --offline
+cd $CWD
 
 clone_git_repo https://github.com/gmarik/Vundle.vim.git $THIRDPARTY/Vundle.vim
 make_link $THIRDPARTY/Vundle.vim ~/.vim/bundle/Vundle.vim
