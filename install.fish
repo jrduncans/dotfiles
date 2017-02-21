@@ -54,6 +54,7 @@ make_link $DOTFILES/sublime/Scala.sublime-settings $SUBLIME_PREFS/Scala.sublime-
 make_link $DOTFILES/sublime/Ruby.sublime-settings $SUBLIME_PREFS/Ruby.sublime-settings
 make_link $DOTFILES/sublime/Ensime.sublime-settings $SUBLIME_PREFS/Ensime.sublime-settings
 make_link $DOTFILES/sublime/Package\ Control.sublime-settings $SUBLIME_PREFS/Package\ Control.sublime-settings
+make_link $DOTFILES/sublime/fish.sublime-settings $SUBLIME_PREFS/fish.sublime-settings
 
 mkdir -p ~/bin
 mkdir -p ~/.local/bin
