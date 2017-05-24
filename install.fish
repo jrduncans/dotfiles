@@ -45,6 +45,7 @@ make_link $DOTFILES/fish/functions ~/.config/fish/functions
 make_link $DOTFILES/fish/completions ~/.config/fish/completions
 make_link $DOTFILES/fish/oh-my-fish ~/.config/omf
 make_link $DOTFILES/git/gitconfig ~/.gitconfig
+make_link $DOTFILES/git/gitconfig_nike ~/.gitconfig_nike
 make_link $DOTFILES/vim/vimrc ~/.vimrc
 make_link $DOTFILES/ruby/irbrc ~/.irbrc
 make_link $DOTFILES/sbt/global.sbt ~/.sbt/0.13/global.sbt
