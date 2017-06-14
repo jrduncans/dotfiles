@@ -21,6 +21,7 @@
 	p = pull --rebase --prune
 	append = commit --amend --no-edit
 	tree = log --graph --oneline --decorate --all
+	graph = log --graph --all --decorate --stat --date=iso
 	unstage = reset HEAD --
 
 [push]

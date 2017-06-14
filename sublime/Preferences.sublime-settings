@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/Solarized Color Scheme/Solarized (dark).tmTheme",
+	"color_scheme": "Packages/Solarized Color Scheme/Solarized (light).tmTheme",
 	"folder_exclude_patterns":
 	[
 		"target",
@@ -11,5 +11,5 @@
 	[
 		"Vintage"
 	],
-	"theme": "Soda SolarizedDark.sublime-theme"
+	"theme": "Sodarized Light 3.sublime-theme"
 }
