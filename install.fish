@@ -75,9 +75,6 @@ clone_git_repo https://github.com/jkaving/intellij-colors-solarized.git $THIRDPA
 
 clone_git_repo https://github.com/jrduncans/timetracker.git ~/apps/timetracker
 
-clone_git_repo https://github.com/powerline/fonts.git $THIRDPARTY/powerline-fonts
-eval $THIRDPARTY/powerline-fonts/install.sh
-
 make_link ~/workspace/third-party/solarized/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/solarized.vim
 
 vi +PluginInstall +qall
