@@ -3,6 +3,7 @@
 set DOTFILES ~/dotfiles
 set THIRDPARTY ~/workspace/third-party
 set SUBLIME_PREFS ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+set VSCODE_PREFS ~/Library/Application\ Support/Code/User
 set CWD (pwd)
 
 source $DOTFILES/fish/functions/colored.fish
@@ -56,6 +57,7 @@ make_link $DOTFILES/sublime/Ruby.sublime-settings $SUBLIME_PREFS/Ruby.sublime-se
 make_link $DOTFILES/sublime/Ensime.sublime-settings $SUBLIME_PREFS/Ensime.sublime-settings
 make_link $DOTFILES/sublime/Package\ Control.sublime-settings $SUBLIME_PREFS/Package\ Control.sublime-settings
 make_link $DOTFILES/sublime/fish.sublime-settings $SUBLIME_PREFS/fish.sublime-settings
+make_link $DOTFILES/vscode/settings.json $VSCODE_PREFS/settings.json
 
 mkdir -p ~/bin
 mkdir -p ~/.local/bin
