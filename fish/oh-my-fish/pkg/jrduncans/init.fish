@@ -1,4 +1,4 @@
-function mkdir --wraps mdkir
+function mkdir --wraps mkdir
   command mkdir -p $argv;
 end
 
@@ -8,4 +8,8 @@ end
 
 if status --is-login
   set PATH $PATH ~/bin ~/.local/bin
+end
+
+function ll --wraps exa
+  exa -lh --git $argv
 end
