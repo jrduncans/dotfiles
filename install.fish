@@ -49,6 +49,7 @@ make_link $DOTFILES/git/gitconfig ~/.gitconfig
 make_link $DOTFILES/git/gitconfig_nike ~/.gitconfig_nike
 make_link $DOTFILES/vim/vimrc ~/.vimrc
 make_link $DOTFILES/ruby/irbrc ~/.irbrc
+make_link $DOTFILES/ruby/gemrc ~/.gemrc
 make_link $DOTFILES/sbt/global.sbt ~/.sbt/0.13/global.sbt
 make_link $DOTFILES/sbt/plugins/plugins.sbt ~/.sbt/0.13/plugins/plugins.sbt
 make_link $DOTFILES/sublime/Preferences.sublime-settings $SUBLIME_PREFS/Preferences.sublime-settings
