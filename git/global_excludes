@@ -30,3 +30,4 @@ build
 MYTODO
 stephen.properties
 .venv
+.vscode

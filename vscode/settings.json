@@ -2,5 +2,6 @@
     "workbench.colorTheme": "Solarized Light",
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "extensions.ignoreRecommendations": false
 }

@@ -62,14 +62,15 @@ make_link $DOTFILES/vscode/settings.json $VSCODE_PREFS/settings.json
 
 mkdir -p ~/bin
 mkdir -p ~/.local/bin
+mkdir -p ~/.vim/autoload
 
 clone_git_repo https://github.com/oh-my-fish/oh-my-fish.git $THIRDPARTY/oh-my-fish
 cd $THIRDPARTY/oh-my-fish
 eval ./bin/install --offline
 cd $CWD
 
-clone_git_repo https://github.com/gmarik/Vundle.vim.git $THIRDPARTY/Vundle.vim
-make_link $THIRDPARTY/Vundle.vim ~/.vim/bundle/Vundle.vim
+clone_git_repo https://github.com/junegunn/vim-plug.git $THIRDPARTY/vim-plug
+make_link $THIRDPARTY/vim-plug/plug.vim ~/.vim/autoload/plug.vim
 
 clone_git_repo https://github.com/altercation/solarized.git $THIRDPARTY/solarized
 clone_git_repo https://github.com/jkaving/intellij-colors-solarized.git $THIRDPARTY/intellij-colors-solarized
@@ -78,7 +79,7 @@ clone_git_repo https://github.com/jrduncans/timetracker.git ~/apps/timetracker
 
 make_link ~/workspace/third-party/solarized/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/solarized.vim
 
-vi +PluginInstall +qall
+vi +PlugInstall!
 
 sudo pip install virtualenv
 pip install --user virtualfish
