@@ -1,37 +1,21 @@
-if &shell =~# 'fish$'
-    set shell=sh
-endif
-
-set nocompatible
-filetype on
-filetype off
-
 call plug#begin()
 
+Plug 'tpope/vim-sensible'
 Plug 'powerline/powerline', { 'rtp': 'powerline/bindings/vim/' }
 Plug 'dag/vim-fish', { 'for': 'fish' }
 
 call plug#end()
-filetype plugin indent on
 
-syntax enable
 set background=light
 colorscheme solarized
 
-set hlsearch
-set incsearch
 set number
+set visualbell
+set hidden
+set showmatch
 
 setlocal tabstop=4 shiftwidth=4
 autocmd FileType ruby setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2
 autocmd FileType python setlocal expandtab tabstop=4 softtabstop=4 shiftwidth=4
 autocmd FileType php setlocal expandtab tabstop=4 softtabstop=4 shiftwidth=4
 autocmd FileType fish setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2
-
-set modelines=0
-set visualbell
-set scrolloff=3
-set hidden
-set laststatus=2
-set showmatch
-set backspace=indent,eol,start
