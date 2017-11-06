@@ -3,5 +3,8 @@
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "window.zoomLevel": 0,
-    "extensions.ignoreRecommendations": false
+    "extensions.ignoreRecommendations": false,
+    "[ruby]": {
+        "editor.tabSize": 2
+    }
 }
