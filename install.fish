@@ -81,6 +81,7 @@ make_link ~/workspace/third-party/solarized/vim-colors-solarized/colors/solarize
 
 vi +PlugInstall!
 
+sudo easy_install pip
 sudo pip install virtualenv
 pip install --user virtualfish
 
