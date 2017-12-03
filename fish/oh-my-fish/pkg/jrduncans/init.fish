@@ -13,3 +13,7 @@ end
 function ll --wraps exa
   exa -lh --git $argv
 end
+
+function amm-cats --wraps amm
+  amm -p ~/dotfiles/amm/cats-predef.sc
+end
