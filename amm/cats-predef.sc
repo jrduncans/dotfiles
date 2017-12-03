@@ -5,3 +5,5 @@ import $ivy.`org.typelevel::cats-core:1.0.0-MF`
 import cats._
 import cats.data._
 import cats.implicits._
+import scala.concurrent._
+import scala.concurrent.ExecutionContext.Implicits.global
