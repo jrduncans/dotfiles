@@ -7,20 +7,14 @@
 	[
 		"AdvancedNewFile",
 		"ChangeQuotes",
-		"DashDoc",
-		"Ensime",
 		"fish",
 		"HOCON Syntax Highlighting",
-		"Indent XML",
 		"Local History",
-		"Markdown Preview",
 		"MarkdownEditing",
 		"Package Control",
 		"Pretty JSON",
 		"SideBarEnhancements",
 		"Solarized Color Scheme",
-		"SublimeREPL",
-		"SublimeSBT",
 		"Theme - Sodarized",
 		"Trimmer"
 	]
