@@ -1,4 +1,4 @@
-function idea
+function open-intellij
   set project $argv[1]
 
   set ideas \
