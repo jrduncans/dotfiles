@@ -23,6 +23,7 @@
 	tree = log --graph --oneline --decorate --all
 	graph = log --graph --all --decorate --stat --date=iso
 	unstage = reset HEAD --
+	fp = push --force-with-lease
 
 [push]
 	default = current
