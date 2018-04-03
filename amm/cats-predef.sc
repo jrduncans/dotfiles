@@ -1,4 +1,5 @@
 interp.configureCompiler(_.settings.YpartialUnification.value = true)
+interp.configureCompiler(_.settings.Ydelambdafy.value = "inline")
 
 import $plugin.$ivy.`org.spire-math::kind-projector:0.9.6`
 import $ivy.`org.typelevel::cats-core:1.1.0`
