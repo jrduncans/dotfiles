@@ -8,13 +8,8 @@
         "editor.tabSize": 2
     },
     "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressUpdateNotice": false,
+        "suppressShowKeyBindingsNotice": true,
         "suppressWelcomeNotice": true
-    }
+    },
+    "gitlens.keymap": "chorded"
 }

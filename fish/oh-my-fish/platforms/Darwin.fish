@@ -14,6 +14,6 @@ function java6
   set -x -g JAVA_HOME (/usr/libexec/java_home -v 1.6 ^/dev/null)
 end
 
-java9; or java8
+java8
 
 set -x -g P4MERGE /Applications/p4merge.app/Contents/Resources/launchp4merge
