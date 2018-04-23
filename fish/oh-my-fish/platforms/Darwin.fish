@@ -1,5 +1,5 @@
-function java9
-  set -x -g JAVA_HOME (/usr/libexec/java_home -v 9 ^/dev/null)
+function java10
+  set -x -g JAVA_HOME (/usr/libexec/java_home -v 10 ^/dev/null)
 end
 
 function java8
