@@ -20,7 +20,7 @@
 	st = status --short --branch
 	p = pull --rebase --prune
 	append = commit --amend --no-edit
-	tree = log --graph --oneline --decorate --all
+	tree = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --graph --all
 	graph = log --graph --all --decorate --stat --date=iso
 	unstage = reset HEAD --
 	fp = push --force-with-lease

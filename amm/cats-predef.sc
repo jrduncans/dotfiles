@@ -31,8 +31,9 @@ def importMouse = {
 def importCirce = {
   repl.load("import $ivy.`io.circe::circe-core:0.9.3`")
   repl.load("import $ivy.`io.circe::circe-generic:0.9.3`")
+  repl.load("import $ivy.`io.circe::circe-generic-extras:0.9.3`")
   repl.load("import $ivy.`io.circe::circe-parser:0.9.3`")
-  repl.load("import io.circe._, io.circe.generic.auto._, io.circe.parser._, io.circe.syntax._")
+  repl.load("import io.circe._, io.circe.generic.semiauto._, io.circe.generic.auto._, io.circe.parser._, io.circe.syntax._")
 }
 
 def importMonocle = {

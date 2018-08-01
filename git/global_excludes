@@ -22,7 +22,6 @@ Thumbs.db
 .springBeans
 cobertura.ser
 maven-eclipse.xml
-target
 build
 .redcar
 *.iml

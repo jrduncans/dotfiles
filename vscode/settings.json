@@ -2,14 +2,13 @@
     "workbench.colorTheme": "Solarized Light",
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
+    "editor.fontSize": 14,
     "window.zoomLevel": 0,
     "extensions.ignoreRecommendations": false,
     "[ruby]": {
         "editor.tabSize": 2
     },
-    "gitlens.advanced.messages": {
-        "suppressShowKeyBindingsNotice": true,
-        "suppressWelcomeNotice": true
-    },
-    "gitlens.keymap": "chorded"
+    "editor.minimap.enabled": false,
+    "python.venvPath": "~/.virtualenvs",
+    "workbench.sideBar.location": "right"
 }
