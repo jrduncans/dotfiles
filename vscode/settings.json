@@ -10,5 +10,6 @@
     },
     "editor.minimap.enabled": false,
     "python.venvPath": "~/.virtualenvs",
-    "workbench.sideBar.location": "right"
+    "workbench.sideBar.location": "right",
+    "python.jediEnabled": false
 }

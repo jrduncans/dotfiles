@@ -1,10 +1,8 @@
 *.swp
 .DS_Store
 .DS_Store?
-._*
 .Spotlight-V100
 .Trashes
-Icon?
 ehthumbs.db
 Thumbs.db
 *.sublime-project
@@ -20,9 +18,7 @@ Thumbs.db
 .project
 .settings
 .springBeans
-cobertura.ser
 maven-eclipse.xml
-build
 .redcar
 *.iml
 .idea
