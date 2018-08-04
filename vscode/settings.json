@@ -1,8 +1,9 @@
 {
     "workbench.colorTheme": "Solarized Light",
     "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
     "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+    "editor.tabSize": 2,
     "window.zoomLevel": 0,
     "extensions.ignoreRecommendations": false,
     "[ruby]": {
@@ -11,5 +12,21 @@
     "editor.minimap.enabled": false,
     "python.venvPath": "~/.virtualenvs",
     "workbench.sideBar.location": "right",
-    "python.jediEnabled": false
+    "python.jediEnabled": false,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true,
+        "suppressWelcomeNotice": true
+    },
+    "gitlens.keymap": "chorded",
+    "gitlens.historyExplorer.enabled": true,
+    "gitlens.defaultDateStyle": "absolute",
+    "[scss]": {
+        "editor.tabSize": 2
+    },
+    "cSpell.userWords": [
+        "Unmaintained"
+    ],
+    "[markdown]": {
+        "editor.tabSize": 4
+    }
 }
