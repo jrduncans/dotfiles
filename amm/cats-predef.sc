@@ -1,8 +1,8 @@
 interp.configureCompiler(_.settings.YpartialUnification.value = true)
 interp.configureCompiler(_.settings.Ydelambdafy.value = "inline")
 
-import $plugin.$ivy.`org.spire-math::kind-projector:0.9.6`
-import $ivy.`org.typelevel::cats-core:1.1.0`
+import $plugin.$ivy.`org.spire-math::kind-projector:0.9.7`
+import $ivy.`org.typelevel::cats-core:1.2.0`
 import cats._
 import cats.data._
 import cats.implicits._
@@ -10,7 +10,7 @@ import scala.concurrent._
 import scala.concurrent.ExecutionContext.Implicits.global
 
 def importCatsFree = {
-  repl.load("import $ivy.`org.typelevel::cats-free:1.1.0`")
+  repl.load("import $ivy.`org.typelevel::cats-free:1.2.0`")
   repl.load("import cats.free._")
 }
 
@@ -20,11 +20,11 @@ def importCatsEffect = {
 }
 
 def importKittens = {
-  repl.load("import $ivy.`org.typelevel::kittens:1.0.0-RC3`")
+  repl.load("import $ivy.`org.typelevel::kittens:1.1.0`")
 }
 
 def importMouse = {
-  repl.load("import $ivy.`org.typelevel::mouse:0.16`")
+  repl.load("import $ivy.`org.typelevel::mouse:0.17`")
   repl.load("import mouse.all._")
 }
 
