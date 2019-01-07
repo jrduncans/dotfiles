@@ -26,3 +26,5 @@ MYTODO
 stephen.properties
 .venv
 .vscode
+.bloop
+.metals
