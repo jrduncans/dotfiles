@@ -6,7 +6,7 @@ Plug 'dag/vim-fish', { 'for': 'fish' }
 
 call plug#end()
 
-set background=light
+set background=dark
 colorscheme solarized
 
 set number
