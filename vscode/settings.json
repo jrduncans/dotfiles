@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "Solarized Dark",
     "editor.fontFamily": "Fira Code",
     "editor.fontSize": 14,
     "editor.fontLigatures": true,
@@ -31,5 +30,6 @@
     },
     "files.associations": {
         "*.sc": "scala"
-    }
+    },
+    "workbench.colorTheme": "Solarized Dark"
 }
