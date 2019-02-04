@@ -28,3 +28,4 @@ stephen.properties
 .vscode
 .bloop
 .metals
+.ruby-version
