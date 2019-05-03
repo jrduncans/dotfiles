@@ -2,17 +2,12 @@ interp.configureCompiler(_.settings.YpartialUnification.value = true)
 interp.configureCompiler(_.settings.Ydelambdafy.value = "inline")
 
 import $plugin.$ivy.`org.spire-math::kind-projector:0.9.9`
-import $ivy.`org.typelevel::cats-core:1.5.0`
+import $ivy.`org.typelevel::cats-core:1.6.0`
 import cats._
 import cats.data._
 import cats.implicits._
 import scala.concurrent._
 import scala.concurrent.ExecutionContext.Implicits.global
-
-def importCatsFree = {
-  repl.load("import $ivy.`org.typelevel::cats-free:1.5.0`")
-  repl.load("import cats.free._")
-}
 
 def importCatsEffect = {
   repl.load("import $ivy.`org.typelevel::cats-effect:1.2.0`")
@@ -41,4 +36,9 @@ def importMonocle = {
   repl.load("import $ivy.`com.github.julien-truffaut::monocle-core:1.5.1-cats`")
   repl.load("import $ivy.`com.github.julien-truffaut::monocle-macro:1.5.1-cats`")
   repl.load("import monocle.Lens,monocle.macros.GenLens,monocle.macros.Lenses,monocle.function.all._,monocle.macros.syntax.lens._")
+}
+
+def importChimney = {
+  repl.load("import $ivy.`io.scalaland::chimney:0.3.1`")
+  repl.load("import io.scalaland.chimney.dsl._")
 }
