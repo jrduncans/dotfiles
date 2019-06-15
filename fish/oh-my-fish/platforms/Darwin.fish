@@ -1,3 +1,7 @@
+function java12
+  set -x -g JAVA_HOME (/usr/libexec/java_home -v 12 ^/dev/null)
+end
+
 function java11
   set -x -g JAVA_HOME (/usr/libexec/java_home -v 11 ^/dev/null)
 end
