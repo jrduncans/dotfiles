@@ -15,11 +15,11 @@ def importCatsEffect = {
 }
 
 def importKittens = {
-  repl.load("import $ivy.`org.typelevel::kittens:1.2.0`")
+  repl.load("import $ivy.`org.typelevel::kittens:1.2.1`")
 }
 
 def importMouse = {
-  repl.load("import $ivy.`org.typelevel::mouse:0.20`")
+  repl.load("import $ivy.`org.typelevel::mouse:0.22`")
   repl.load("import mouse.all._")
 }
 
