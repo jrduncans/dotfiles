@@ -24,10 +24,7 @@
 	graph = log --graph --all --decorate --stat --date=iso
 	unstage = reset HEAD --
 	fp = push --force-with-lease
-	tags = !"git for-each-ref \
-    --sort=taggerdate \
-    --format '%(tag)_,,,_%(taggerdate:raw)_,,,_%(taggername)_,,,_%(subject)' refs/tags \
-    | awk 'BEGIN { FS = \"_,,,_\"  } ; { t=strftime(\"%Y-%m-%d  %H:%M\",$2); printf \"%-20s %-18s %-25s %s\\n\", t, $1, $4, $3  }'"
+	tags = log --date-order --tags --simplify-by-decoration --pretty=format:'%ci %Cgreen %h %Cblue %<|(75,trunc) %S %Creset %cn'
 
 [push]
 	default = current
