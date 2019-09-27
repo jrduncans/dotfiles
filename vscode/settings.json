@@ -52,5 +52,6 @@
         "**/.factorypath": true
     },
     "diffEditor.renderSideBySide": false,
-    "terminal.integrated.shell.osx": "/usr/local/bin/fish"
+    "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+    "workbench.activityBar.visible": true
 }
