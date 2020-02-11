@@ -53,5 +53,6 @@
     },
     "diffEditor.renderSideBySide": false,
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
-    "workbench.activityBar.visible": true
+    "workbench.activityBar.visible": true,
+    "go.useLanguageServer": true
 }

@@ -29,7 +29,8 @@ def importCirce = {
   repl.load("import $ivy.`io.circe::circe-generic-extras:0.12.1`")
   repl.load("import $ivy.`io.circe::circe-parser:0.12.1`")
   repl.load("import $ivy.`io.circe::circe-optics:0.12.0`")
-  repl.load("import io.circe._, io.circe.generic.semiauto._, io.circe.generic.auto._, io.circe.parser._, io.circe.syntax._, io.circe.optics.JsonPath._")
+  repl.load("import $ivy.`io.circe::circe-literal:0.12.0`")
+  repl.load("import io.circe._, io.circe.generic.semiauto._, io.circe.generic.auto._, io.circe.parser._, io.circe.syntax._, io.circe.optics.JsonPath._, io.circe.literal._")
 }
 
 def importMonocle = {
@@ -41,4 +42,8 @@ def importMonocle = {
 def importChimney = {
   repl.load("import $ivy.`io.scalaland::chimney:0.3.2`")
   repl.load("import io.scalaland.chimney.dsl._")
+}
+
+def importSquants = {
+  repl.load("import $ivy.`org.typelevel::squants:1.6.0`")
 }
