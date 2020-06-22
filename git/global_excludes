@@ -30,3 +30,4 @@ stephen.properties
 .metals
 .ruby-version
 target
+/project/metals.sbt

@@ -31,7 +31,6 @@
     "files.associations": {
         "*.sc": "scala"
     },
-    "workbench.colorTheme": "Solarized Dark",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "gitlens.views.repositories.location": "scm",
@@ -54,5 +53,10 @@
     "diffEditor.renderSideBySide": false,
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
     "workbench.activityBar.visible": true,
-    "go.useLanguageServer": true
+    "go.useLanguageServer": true,
+    "liveshare.allowGuestTaskControl": true,
+    "liveshare.allowGuestDebugControl": true,
+    "liveshare.languages.allowGuestCommandControl": true,
+    "todo-tree.tree.showScanModeButton": false,
+    "workbench.colorTheme": "Night Owl"
 }
