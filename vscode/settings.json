@@ -45,10 +45,13 @@
     "gitlens.views.compare.location": "gitlens",
     "gitlens.views.search.location": "gitlens",
     "files.exclude": {
+        "**/.bloop": true,
         "**/.classpath": true,
+        "**/.factorypath": true,
+        "**/.idea": true,
+        "**/.metals": true,
         "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
+        "**/.settings": true
     },
     "diffEditor.renderSideBySide": false,
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
@@ -58,5 +61,10 @@
     "liveshare.allowGuestDebugControl": true,
     "liveshare.languages.allowGuestCommandControl": true,
     "todo-tree.tree.showScanModeButton": false,
-    "workbench.colorTheme": "Night Owl"
+    "workbench.colorTheme": "Night Owl",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "python.languageServer": "Microsoft",
+    "search.exclude": {
+        "**/target": true
+    }
 }
