@@ -49,6 +49,7 @@
         "**/.classpath": true,
         "**/.factorypath": true,
         "**/.idea": true,
+        "**/.idea_modules": true,
         "**/.metals": true,
         "**/.project": true,
         "**/.settings": true
