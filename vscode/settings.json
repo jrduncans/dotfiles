@@ -63,9 +63,11 @@
     "liveshare.languages.allowGuestCommandControl": true,
     "todo-tree.tree.showScanModeButton": false,
     "workbench.colorTheme": "Night Owl",
-    "editor.multiCursorModifier": "ctrlCmd",
     "python.languageServer": "Microsoft",
     "search.exclude": {
         "**/target": true
-    }
+    },
+    "java.semanticHighlighting.enabled": true,
+    "java.home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/",
+    "editor.definitionLinkOpensInPeek": true
 }
