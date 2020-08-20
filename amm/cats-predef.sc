@@ -30,7 +30,7 @@ def importCirce = {
   repl.load("import $ivy.`io.circe::circe-parser:0.12.1`")
   repl.load("import $ivy.`io.circe::circe-optics:0.12.0`")
   repl.load("import $ivy.`io.circe::circe-literal:0.12.0`")
-  repl.load("import io.circe._, io.circe.generic.semiauto._, io.circe.generic.auto._, io.circe.parser._, io.circe.syntax._, io.circe.optics.JsonPath._, io.circe.literal._")
+  repl.load("import io.circe._, io.circe.generic.extras.Configuration, io.circe.generic.extras.semiauto._, io.circe.parser._, io.circe.syntax._, io.circe.optics.JsonPath._, io.circe.literal._")
 }
 
 def importMonocle = {
