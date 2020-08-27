@@ -65,3 +65,5 @@
 
 [includeIf "gitdir:**/workspace/nike/"]
 	path = .gitconfig_nike
+[init]
+	defaultBranch = main

@@ -7,7 +7,7 @@ function jl --description 'colorized pretty-printed JSON in less'
 end
 
 if status --is-login
-  set PATH $PATH ~/.cargo/bin (go env GOPATH)/bin ~/bin ~/.local/bin
+  set PATH $PATH ~/.cargo/bin (go env GOPATH)/bin ~/bin ~/.local/bin ~/Library/Application\ Support/Coursier/bin
 end
 
 status --is-interactive; and source (rbenv init -|psub)
