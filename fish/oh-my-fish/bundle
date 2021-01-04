@@ -4,6 +4,7 @@ package jrduncans
 package local-config
 package sublime
 package timesheet
+package virtualfish
 package z
 theme bobthefish
 theme default
