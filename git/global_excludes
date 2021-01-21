@@ -32,3 +32,6 @@ stephen.properties
 target
 /project/metals.sbt
 /project/project
+__pycache__
+.bsp
+.dotty-ide-disabled
