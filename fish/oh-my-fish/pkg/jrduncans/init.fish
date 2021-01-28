@@ -15,6 +15,7 @@ end
 
 if status --is-login
   __path_prepend /opt/homebrew/bin
+  __path_prepend /opt/homebrew/sbin
   __path_prepend ~/local/bin
   __path_prepend ~/bin
   __path_prepend ~/.cargo/bin
