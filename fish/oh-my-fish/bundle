@@ -1,7 +1,9 @@
 package brew
+package foreign-env
 package java
 package jrduncans
 package local-config
+package sdk
 package sublime
 package timesheet
 package virtualfish
