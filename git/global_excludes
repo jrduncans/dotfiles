@@ -35,3 +35,4 @@ target
 __pycache__
 .bsp
 .dotty-ide-disabled
+.sdkmanrc
