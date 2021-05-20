@@ -1,8 +1,8 @@
 interp.configureCompiler(_.settings.Ydelambdafy.value = "inline")
 interp.configureCompiler(_.settings.YmacroAnnotations.value = true)
 
-import $plugin.$ivy.`org.typelevel:::kind-projector:0.11.3`
-import $ivy.`org.typelevel::cats-core:2.4.2`
+import $plugin.$ivy.`org.typelevel:::kind-projector:0.13.0`
+import $ivy.`org.typelevel::cats-core:2.6.1`
 import cats._
 import cats.data._
 import cats.syntax.all._
@@ -10,16 +10,16 @@ import scala.concurrent._
 import scala.concurrent.ExecutionContext.Implicits.global
 
 def importCatsEffect = {
-  repl.load("import $ivy.`org.typelevel::cats-effect:2.3.3`")
+  repl.load("import $ivy.`org.typelevel::cats-effect:3.1.1`")
   repl.load("import cats.effect._")
 }
 
 def importKittens = {
-  repl.load("import $ivy.`org.typelevel::kittens:2.2.1`")
+  repl.load("import $ivy.`org.typelevel::kittens:2.3.1`")
 }
 
 def importMouse = {
-  repl.load("import $ivy.`org.typelevel::mouse:1.0.0`")
+  repl.load("import $ivy.`org.typelevel::mouse:1.0.2`")
   repl.load("import mouse.all._")
 }
 
@@ -45,11 +45,11 @@ def importChimney = {
 }
 
 def importSquants = {
-  repl.load("import $ivy.`org.typelevel::squants:1.7.4`")
+  repl.load("import $ivy.`org.typelevel::squants:1.8.0`")
 }
 
 def importFS2 = {
-  repl.load("import $ivy.`co.fs2::fs2-core:2.5.0`")
-  repl.load("import $ivy.`co.fs2::fs2-io:2.5.0`")
+  repl.load("import $ivy.`co.fs2::fs2-core:3.0.3`")
+  repl.load("import $ivy.`co.fs2::fs2-io:3.0.3`")
   repl.load("import fs2.Stream")
 }
