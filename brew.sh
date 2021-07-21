@@ -1,10 +1,5 @@
 #!/bin/sh
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+which brew > /dev/null || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-brew tap homebrew/cask-fonts
-
-brew install fish git rbenv wget jq dos2unix awscli coreutils pigz exa ripgrep fd pup bat python3 gawk htop httpie
-brew install qlcolorcode qlstephen qlmarkdown quicklook-json p4v font-fira-code gitter
-
-brew install vim --with-override-system-vi
+brew install fish git vim rbenv wget jq dos2unix awscli coreutils pigz exa ripgrep fd pup bat bottom dust choose-rust xh sd gh starship coursier plantuml python3 gawk htop p4v font-fira-code font-fira-code-nerd-font jrduncans/timeturner/timeturner

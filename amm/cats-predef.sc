@@ -1,5 +1,6 @@
 interp.configureCompiler(_.settings.Ydelambdafy.value = "inline")
 interp.configureCompiler(_.settings.YmacroAnnotations.value = true)
+interp.configureCompiler(_.settings.YtastyReader)
 
 import $plugin.$ivy.`org.typelevel:::kind-projector:0.13.0`
 import $ivy.`org.typelevel::cats-core:2.6.1`
