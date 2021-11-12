@@ -2,7 +2,7 @@ interp.configureCompiler(_.settings.Ydelambdafy.value = "inline")
 interp.configureCompiler(_.settings.YmacroAnnotations.value = true)
 interp.configureCompiler(_.settings.YtastyReader)
 
-import $plugin.$ivy.`org.typelevel:::kind-projector:0.13.1`
+import $plugin.$ivy.`org.typelevel:::kind-projector:0.13.2`
 import $ivy.`org.typelevel::cats-core:2.6.1`
 import cats._
 import cats.data._
@@ -11,7 +11,7 @@ import scala.concurrent._
 import scala.concurrent.ExecutionContext.Implicits.global
 
 def importCatsEffect = {
-  repl.load("import $ivy.`org.typelevel::cats-effect:3.2.5`")
+  repl.load("import $ivy.`org.typelevel::cats-effect:3.2.9`")
   repl.load("import cats.effect._")
 }
 
@@ -20,7 +20,7 @@ def importKittens = {
 }
 
 def importMouse = {
-  repl.load("import $ivy.`org.typelevel::mouse:1.0.4`")
+  repl.load("import $ivy.`org.typelevel::mouse:1.0.7`")
   repl.load("import mouse.all._")
 }
 
@@ -35,8 +35,8 @@ def importCirce = {
 }
 
 def importMonocle = {
-  repl.load("import $ivy.`dev.optics::monocle-core:3.0.0`")
-  repl.load("import $ivy.`dev.optics::monocle-macro:3.0.0`")
+  repl.load("import $ivy.`dev.optics::monocle-core:3.1.0`")
+  repl.load("import $ivy.`dev.optics::monocle-macro:3.1.0`")
   repl.load("import monocle.Lens,monocle.macros.GenLens,monocle.macros.Lenses,monocle.function.all._,monocle.syntax.all._")
 }
 
@@ -50,7 +50,7 @@ def importSquants = {
 }
 
 def importFS2 = {
-  repl.load("import $ivy.`co.fs2::fs2-core:3.1.1`")
-  repl.load("import $ivy.`co.fs2::fs2-io:3.1.1`")
+  repl.load("import $ivy.`co.fs2::fs2-core:3.2.2`")
+  repl.load("import $ivy.`co.fs2::fs2-io:3.2.2`")
   repl.load("import fs2.Stream")
 }
