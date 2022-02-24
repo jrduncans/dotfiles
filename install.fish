@@ -2,7 +2,6 @@
 
 set DOTFILES ~/dotfiles
 set THIRDPARTY ~/workspace/third-party
-set SUBLIME_PREFS ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 set CWD (pwd)
 
 source $DOTFILES/fish/functions/colored.fish
@@ -52,12 +51,6 @@ make_link $DOTFILES/ruby/gemrc ~/.gemrc
 make_link $DOTFILES/sbt/0.13/global.sbt ~/.sbt/0.13/global.sbt
 make_link $DOTFILES/sbt/0.13/plugins/plugins.sbt ~/.sbt/0.13/plugins/plugins.sbt
 make_link $DOTFILES/sbt/1.0/plugins/plugins.sbt ~/.sbt/1.0/plugins/plugins.sbt
-make_link $DOTFILES/sublime/Preferences.sublime-settings $SUBLIME_PREFS/Preferences.sublime-settings
-make_link $DOTFILES/sublime/Scala.sublime-settings $SUBLIME_PREFS/Scala.sublime-settings
-make_link $DOTFILES/sublime/Ruby.sublime-settings $SUBLIME_PREFS/Ruby.sublime-settings
-make_link $DOTFILES/sublime/Ensime.sublime-settings $SUBLIME_PREFS/Ensime.sublime-settings
-make_link $DOTFILES/sublime/Package\ Control.sublime-settings $SUBLIME_PREFS/Package\ Control.sublime-settings
-make_link $DOTFILES/sublime/fish.sublime-settings $SUBLIME_PREFS/fish.sublime-settings
 make_link $DOTFILES/starship/starship.toml ~/.config/starship.toml
 
 mkdir -p ~/bin
@@ -81,9 +74,7 @@ make_link ~/workspace/third-party/solarized/vim-colors-solarized/colors/solarize
 
 vi +PlugInstall!
 
-sudo easy_install pip
-sudo pip install virtualenv
-pip install --user virtualfish
+python3 -m pip install --user virtualfish
 
 grep "/usr/local/bin/fish" /etc/shells > /dev/null; or echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
 echo "To set fish as default shell, run:  chsh -s /usr/local/bin/fish"

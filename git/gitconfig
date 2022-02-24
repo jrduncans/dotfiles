@@ -1,5 +1,9 @@
 [core]
 	excludesfile = ~/dotfiles/git/global_excludes
+	pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
 
 [user]
 	name = Stephen Duncan
@@ -31,6 +35,16 @@
 
 [credential]
 	helper = osxkeychain
+
+[delta]
+    navigate = true
+	features = side-by-side line-numbers decorations
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
 
 [diff]
 	tool = p4mergetool
