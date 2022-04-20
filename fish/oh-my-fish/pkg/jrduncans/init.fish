@@ -30,8 +30,6 @@ if test -e /opt/homebrew/bin
   end
 end
 
-status --is-interactive; and source (rbenv init -|psub)
-
 function ll --wraps exa
   exa -lh --git $argv
 end

@@ -3,8 +3,6 @@ package foreign-env
 package java
 package jrduncans
 package local-config
-package nvm
-package sdk
 package sublime
 package timesheet
 package virtualfish

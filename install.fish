@@ -52,6 +52,8 @@ make_link $DOTFILES/sbt/0.13/global.sbt ~/.sbt/0.13/global.sbt
 make_link $DOTFILES/sbt/0.13/plugins/plugins.sbt ~/.sbt/0.13/plugins/plugins.sbt
 make_link $DOTFILES/sbt/1.0/plugins/plugins.sbt ~/.sbt/1.0/plugins/plugins.sbt
 make_link $DOTFILES/starship/starship.toml ~/.config/starship.toml
+make_link $DOTFILES/asdf/asdfrc ~/.asdfrc
+make_link $DOTFILES/asdf/default-gems ~/.default-gems
 
 mkdir -p ~/bin
 mkdir -p ~/.local/bin
