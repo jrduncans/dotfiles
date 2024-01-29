@@ -37,3 +37,4 @@ __pycache__
 .dotty-ide-disabled
 .sdkmanrc
 .tool-versions
+.mise.toml
