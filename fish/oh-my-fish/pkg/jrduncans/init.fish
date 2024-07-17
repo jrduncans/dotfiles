@@ -31,8 +31,8 @@ if test -e /opt/homebrew/bin
   end
 end
 
-function ll --wraps exa
-  exa -lh --git $argv
+function ll --wraps eza
+  eza -lh --git $argv
 end
 
 function amm --description 'Scala REPL'
