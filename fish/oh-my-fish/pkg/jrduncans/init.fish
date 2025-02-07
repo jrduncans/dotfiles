@@ -3,7 +3,7 @@ function mkdir --wraps mkdir
 end
 
 function jl --description 'colorized pretty-printed JSON in less'
-  jq -C . | less -R $argv;
+  jq -C . | less -R
 end
 
 function __path_prepend
