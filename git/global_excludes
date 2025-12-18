@@ -38,3 +38,5 @@ __pycache__
 .sdkmanrc
 .tool-versions
 .mise.toml
+mise.toml
+.scala-build

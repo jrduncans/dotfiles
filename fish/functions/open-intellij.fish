@@ -2,6 +2,7 @@ function open-intellij
   set project $argv[1]
 
   set ideas \
+    /Applications/IntelliJ\ IDEA.app \
     /Applications/IntelliJ\ IDEA\ CE.app \
     /Applications/Intellij\ IDEA\ 14.app \
     /Applications/IntelliJ\ IDEA\ 14\ CE.app \
