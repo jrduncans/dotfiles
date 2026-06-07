@@ -1,1 +1,0 @@
-../../../../workspace/nike/dotfiles/fish/oh-my-fish/hosts/APE9JG5J39CA2E.fish

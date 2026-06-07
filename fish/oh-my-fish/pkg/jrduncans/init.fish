@@ -21,6 +21,7 @@ if status --is-login
   __path_prepend ~/bin
   __path_prepend ~/.cargo/bin
   __path_prepend ~/Library/Application\ Support/Coursier/bin
+  __path_prepend ~/go/bin
 end
 
 functions -e __path_prepend
