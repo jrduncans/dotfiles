@@ -81,8 +81,6 @@
 [rebase]
 	autosquash = true
 
-[includeIf "gitdir:**/workspace/nike/"]
-	path = .gitconfig_nike
 [init]
 	defaultBranch = main
 [filter "lfs"]
